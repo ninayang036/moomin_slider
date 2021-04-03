@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="moomin_slider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="land" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-zm-yoE">
+                                <rect key="frame" x="-120" y="281" width="1072" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="iMw-FN-jnb">
+                                <rect key="frame" x="255" y="20" width="386" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.44372333903534178" blue="0.51302606857640676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <imageReference key="minimumValueImage" image="heart" catalog="system" symbolScale="large"/>
+                                <imageReference key="maximumValueImage" image="heart.fill" catalog="system" symbolScale="large"/>
+                                <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="e0C-mP-Xl9"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="aUH-KB-rtM">
+                                <rect key="frame" x="103" y="54" width="42" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="snm-Aa-454">
+                                <rect key="frame" x="161" y="155" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-Uh-EIE">
+                                <rect key="frame" x="80" y="185" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="xIR-y6-r39">
+                                <rect key="frame" x="272" y="81" width="18" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="bOz-mE-KCF">
+                                <rect key="frame" x="402" y="114" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="D5P-15-AaC">
+                                <rect key="frame" x="591" y="76" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-Jt-mI2">
+                                <rect key="frame" x="718" y="155" width="42" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-bu-iU8">
+                                <rect key="frame" x="505" y="172" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="tJh-rs-rqA">
+                                <rect key="frame" x="709" y="42" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="FbN-4Z-f6M">
+                                <rect key="frame" x="777" y="107" width="42" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="u5n-Vi-kfq">
+                                <rect key="frame" x="671" y="246" width="29" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="iO5-hC-LAZ">
+                                <rect key="frame" x="208" y="210" width="18" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moomin_man" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-fk-wcA">
+                                <rect key="frame" x="602" y="132" width="167" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="m_female" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-UH-ErR">
+                                <rect key="frame" x="134" y="132" width="167" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="SHM-K3-cYI">
+                                <rect key="frame" x="328" y="159" width="42" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hearts" translatesAutoresizingMaskIntoConstraints="NO" id="Brv-Vh-1Fz">
+                                <rect key="frame" x="415" y="175" width="66" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceSlider" destination="iMw-FN-jnb" id="LeS-c5-t2b"/>
+                        <outlet property="femaleImageView" destination="jiO-UH-ErR" id="VRn-7w-qZN"/>
+                        <outlet property="heart" destination="Brv-Vh-1Fz" id="ZYo-XY-AZb"/>
+                        <outlet property="manImageView" destination="IjI-fk-wcA" id="6rU-5H-ABL"/>
+                        <outletCollection property="bloosom" destination="aUH-KB-rtM" collectionClass="NSMutableArray" id="feY-Vn-9TS"/>
+                        <outletCollection property="bloosom" destination="snm-Aa-454" collectionClass="NSMutableArray" id="TZB-ob-Zp5"/>
+                        <outletCollection property="bloosom" destination="Ec5-Uh-EIE" collectionClass="NSMutableArray" id="fio-q4-Ja5"/>
+                        <outletCollection property="bloosom" destination="iO5-hC-LAZ" collectionClass="NSMutableArray" id="fPc-27-OSd"/>
+                        <outletCollection property="bloosom" destination="SHM-K3-cYI" collectionClass="NSMutableArray" id="YLt-wb-040"/>
+                        <outletCollection property="bloosom" destination="xIR-y6-r39" collectionClass="NSMutableArray" id="Yj0-fZ-qsj"/>
+                        <outletCollection property="bloosom" destination="bOz-mE-KCF" collectionClass="NSMutableArray" id="IJR-48-b8Z"/>
+                        <outletCollection property="bloosom" destination="bFr-bu-iU8" collectionClass="NSMutableArray" id="TxK-HQ-L41"/>
+                        <outletCollection property="bloosom" destination="D5P-15-AaC" collectionClass="NSMutableArray" id="A6x-IZ-xgj"/>
+                        <outletCollection property="bloosom" destination="tJh-rs-rqA" collectionClass="NSMutableArray" id="hrs-Lt-23r"/>
+                        <outletCollection property="bloosom" destination="mUH-Jt-mI2" collectionClass="NSMutableArray" id="BxY-7a-60Z"/>
+                        <outletCollection property="bloosom" destination="u5n-Vi-kfq" collectionClass="NSMutableArray" id="Foj-s8-zrQ"/>
+                        <outletCollection property="bloosom" destination="FbN-4Z-f6M" collectionClass="NSMutableArray" id="UkK-9E-gQg"/>
+                        <outletCollection property="bloosom" destination="aUH-KB-rtM" collectionClass="NSMutableArray" id="6J7-wc-xUG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="19.419642857142858" y="78.260869565217391"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cherry-blossom" width="2134" height="2039"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="hearts" width="512" height="512"/>
+        <image name="land" width="1920" height="292"/>
+        <image name="m_female" width="1323" height="1397"/>
+        <image name="moomin_man" width="1310" height="1407"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
